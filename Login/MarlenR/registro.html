@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html> 
+<head> 
+  <title>Registrarse</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
+  <style type="text/css">
+    body {padding-top:20px;}
+  </style>
+</head> 
+<body> 
+  <!--INICIO -->
+
+
+<div class="container  col-sm-4 ">
+
+<div class="container"  col-md-6 col-md-offset-3>
+  <div class="container">
+  <h2>Registrarse</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="usr">Nombre:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+      <div class="form-group">
+      <label for="usr">Apellido:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Correo:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Clave:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    
+    <div  class="form-group">
+    <label for="text">Genero:</label>
+    <select class="form-control">
+        <option>Masculino</option>
+        <option>Femenino</option>
+        
+    </select>
+    </div>
+  </form>
+</div>
+  
+  
+  <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend class="text-center">Datetimepicker Bootstrap</legend>
+                  <div class='input-group date' id='divMiCalendario'>
+                      <input type='text' id="txtFecha" class="form-control"  readonly/>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+<div  class="col-md-6 col-md-offset-3">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+</div>
+<div <div  class="col-md-6 col-md-offset-3">
+
+<button type="submit" class="btn btn-default center">Enviar</button>
+</div>
+
+
+
+</div>
+<div class="container">
+	<img src="https://www.internetya.co/wp-content/uploads/2016/09/precios-tiendas-virtuales-colombia.jpg" class="img-rounded" alt="Cinque Terre">
+</div>
+  <!--FIN -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="js/moment.min.js"></script>
+   <script src="js/bootstrap-datetimepicker.min.js"></script>
+   <script src="js/bootstrap-datetimepicker.es.js"></script>
+   <script type="text/javascript">
+     $('#divMiCalendario').datetimepicker({
+          format: 'YYYY-MM-DD HH:mm'       
+      });
+      $('#divMiCalendario').data("DateTimePicker").show();
+   </script>
+</body>
+</html>
